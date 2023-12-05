@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web mẫu</title>
+    <link rel="icon" href="logo.ico" type="images/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="font/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="css/responsiveslides.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+        // You can also use "$(window).load(function() {"
+        $(function () {
+
+            // Slideshow 4
+            $("#slider4").responsiveSlides({
+                auto: false,
+                pager: false,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+            $("#slider5").responsiveSlides({
+                auto: false,
+                pager: false,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                $('.events').append("<li>after event fired.</li>");
+                }
+            });
+        });
+    </script>
+    <style>
+        .callbacks{width: 90%;margin: 0 5%;}
+    </style>
+</head>
+
+<body>
+    <div id="header" class="header1" style="height: 81px;">
+        <div class="  col-sm-3 col-xs-3 " id="bear" style="padding-top: 20px;">
+            <button class="menucon" type="button" data-toggle="collapse" onclick="menunho()">
+                <i class="fas fa-bars " aria-hidden="true" style="padding-top: 5px; font-size: 30px; color: #fff;"></i>
+            </button>
+        </div>
+        <div id="menu2" class="menu2">
+            <input type="button" value="X" onclick="menunho()" style=" padding: 5px;padding-right: 5px;background: none;border: none;font-size: 20px;
+             float: right;padding-right: 15px;">
+            <div style="padding: 30px 0; " id="mncon">
+                <ul>
+                    <li style="padding-left: 14px; font-size: 14px;">
+                        <input type="search" style="height: 28px;" placeholder="    Tìm kiếm...">
+                        <button type="submit" class="timkiem2">
+                            <i class="fas fa-search" style=" color: #fff;padding-top: 4px;"></i>
+                        </button>
+                    </li>
+                    <li><a href="gioithieuchung.html">Về chúng tôi</a>
+                        <button class="kss" onclick="hien1()"><i class="fas fa-angle-down"
+                                style="padding-top: 4px;"></i></button>
+                        <nav>
+                            <ul class="sub-menu1" style="z-index: 40;" id="hien">
+                                <li><a href="gioithieuchung.html">Giới
+                                        Thiệu
+                                        Chung</a></li>
+                                <li><a href="tamnhinsm.html">Tầm Nhìn- Sứ
+                                        Mệnh</a></li>
+                                <li><a href="giatricotloi.html">Giá Trị
+                                        Cốt
+                                        Lõi
+                                    </a></li>
+                                <li><a href="banlanhdao.html">Ban Lãnh
+                                        Đạo</a>
+                                </li>
+                                <li><a href="hethongchinhanh.html">Hệ
+                                        Thống
+                                        Chi
+                                        Nhánh</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li><a href="duan.html">Dự án </a>
+                        <button class="kss" onclick="hien2()"><i class="fas fa-angle-down"
+                                style="padding-top: 6px;"></i></button>
+                        <nav>
+                            <ul class="sub-menu1" style="z-index: 40;" id="xhien">
+                                <li><a href="canho.html">Căn Hộ</a></li>
+                                <li><a href="nhapho.html">Nhà Phố </a>
+                                </li>
+                                <li><a href="datnen.html">Đất Nền</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li><a href="vanhoa.html">Văn hóa</a></li>
+                    <li><a href="tintuc.html">Tin Tức</a>
+                        <button class="kss" onclick="hien3()"><i class="fas fa-angle-down"
+                                style="padding-top: 4px;"></i></button>
+                        <nav>
+                            <ul class="sub-menu1" style="z-index: 40;" id="hienra">
+                                <li><a href="tinthitruong.html">Tin Thị
+                                        Trường</a></li>
+                                <li><a href="tinveaptech.html">Tin Về
+                                        Aptech</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li><a href="tuyendung.html">Tuyển Dụng</a></li>
+                    <li><a href="lienhe.html">Liên Hệ</a></li>
+                    <li><a href="trangchu.html">Đăng nhập</a>
+                    </li>
+                    <li>
+                        <div id="messi">
+                            <i class="fab fa-facebook-f"
+                                style="background: #fefefe; border:1px solid rgb(57, 56, 56); padding-top: 5px;"></i>
+                            <i class="fab fa-instagram"
+                                style="background: #fff; border:1px solid rgb(57, 56, 56); padding-top: 5px;"></i>
+                            <i class="fab fa-twitter"
+                                style="background: #fff; border:1px solid rgb(57, 56, 56); padding-top: 5px;"></i>
+                            <i class="far fa-envelope"
+                                style="background: #fff; border:1px solid rgb(57, 56, 56); padding-top: 5px;"></i>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <script>
+            function menunho() {
+                if (document.getElementById('menu2').style.display == 'block') {
+                    document.getElementById('menu2').style.display = 'none';
+                } else {
+                    document.getElementById('menu2').style.display = 'block';
+                }
+
+            }
+            function hien1() {
+                if (document.getElementById('hien').style.display == 'block') {
+                    document.getElementById('hien').style.display = 'none';
+                } else {
+                    document.getElementById('hien').style.display = 'block';
+                }
+
+            }
+            function hien2() {
+                if (document.getElementById('xhien').style.display == 'block') {
+                    document.getElementById('xhien').style.display = 'none';
+                } else {
+                    document.getElementById('xhien').style.display = 'block';
+                }
+
+            }
+            function hien3() {
+                if (document.getElementById('hienra').style.display == 'block') {
+                    document.getElementById('hienra').style.display = 'none';
+                } else {
+                    document.getElementById('hienra').style.display = 'block';
+                }
+            }
+        </script>
+        <div id="" class="container">
+            <div class="row">
+
+
+                <div class="col-lg-3 col-md-3 col-sm-5 col-xs-5">
+                    <!--các cái col-lg-4 ... là dùng để hiển thị ở đth , máy tính .., tối đa là 12 ở cùng 1 dòng-->
+                    <a href="trangchu.html" id="logo">
+                        <img src="logo.ico" alt="logotrang">
+                    </a>
+                </div>
+                <div class="col-lg-8 col-md-8">
+                    <ul id="main-menu" style="max-height: 1px;">
+                        <li class=""><a href="gioithieuchung.html" style="color: #fff;">Về Chúng
+                                Tôi</a>
+                            <ul class="sub-menu" style="z-index: 40;">
+                                <li><a href="gioithieuchung.html">Giới Thiệu
+                                        Chung</a></li>
+                                <li><a href="tamnhinsm.html">Tầm Nhìn- Sứ
+                                        Mệnh</a></li>
+                                <li><a href="giatricotloi.html">Giá Trị Cốt Lõi
+                                    </a></li>
+                                <li><a href="banlanhdao.html">Ban Lãnh Đạo</a>
+                                </li>
+                                <li><a href="hethongchinhanh.html">Hệ Thống Chi
+                                        Nhánh</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="duan.html" style="color: #fff;">Dự Án</a>
+                            <ul class="sub-menu" style="z-index: 40;">
+                                <li><a href="canho.html">Căn Hộ</a></li>
+                                <li><a href="nhapho.html">Nhà Phố </a></li>
+                                <li><a href="datnen.html">Đất Nền</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="vanhoa.html" style="color: #fff;">Văn
+                                Hóa</a></li>
+                        <li><a href="tintuc.html" style="color: #fff;">Tin
+                                Tức</a>
+                            <ul class="sub-menu" style="z-index: 40;">
+                                <li><a href="tinthitruong.html">Tin Thị
+                                        Trường</a></li>
+                                <li><a href="tinveaptech.html">Tin Về Aptech</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="tuyendung.html" style="color: #fff;">Tuyển
+                                Dụng</a></li>
+                        <li><a href="lienhe.html" style="color: #fff;">Liên
+                                Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-4 col-xs-4 " style="padding-top: 10px;">
+                    <button type="submit" onclick="showHide()" class="chidan"><i class="fas fa-search"
+                            style="padding-top: 22px; color: #fff;padding-left: 74px;"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Search" style="display:none;width: 100%;height: 100%;border:1px solid #ccc;position: fixed;bottom: 0px;z-index: 1999;
+        background: #0b0b0b; opacity: .8;">
+        <input type="button" value="X" onclick="showHide()" style="font-size: 30px; background: none; border: none; color: #fff; float: right;
+            padding-right: 28px;" />
+        <div id="" class="container" style="width: 100%;
+        height: 100%;
+        text-align: center;
+        padding-top: 276px;">
+            <div class="row">
+                <input type="search" class="onhap" placeholder="    Tìm kiếm...">
+                <button type="submit" class="timkiem">
+                    <i class="fas fa-search" style=" color: #fff;padding-top: 5px;"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showHide() {
+            if (document.getElementById('Search').style.display == 'block') {
+                document.getElementById('Search').style.display = 'none';
+            } else {
+                document.getElementById('Search').style.display = 'block';
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.sub-menu').parent('li').addClass('has-child');
+        });
+        window.onscroll = function () {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").style.position = "fixed";
+                $("#header").hide();
+                $("#header").slideDown(300);
+            } else {
+                document.getElementById("header").style.position = "relative";
+            }
+        };
+    </script>
+
+    <div id="wp-content" style=" background-color: #d2cdcd; ">
+        <div class="slideshow-container">
+
+            <div class="mySlides ">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/anhnen1.jpg" style="width:100%; height: 500px;">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides ">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/anhnen2.jpg" style="width:100%; height: 500px;">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides ">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/anhnen3.jpg" style="width:100% ; height: 500px;">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center; transform: matrix(1, 0, 0, 1, -29, -36);">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+        <div id="" class="container">
+            <div class="row" style="margin-bottom: 5px;">
+                <div class="col-lg-6 col-sm-6 col-xs-12">
+                    <h4 style="color: #153660;padding-top: 10px; font-weight: bold;">CÔNG TY CỔ PHẦN BẤT ĐỘNG SẢN</h4>
+                    <h1 style="color: black; 
+                    line-height: 1.3; padding-top: -10px;font-weight: bold;font-size: 30px;">ACTECH MIỀN TRUNG</h1>
+                    <p style="font-size: 101%;padding-top: 5px;">
+                        Actech Miền Trung định hướng xây dựng hệ thống phân phối bất động sản rộng khắp, trở thành doanh
+                        nghiệp
+                        kinh doanh và phát triển dự án bất động sản tin cậy, là lựa chọn hàng đầu cho những nhà đầu tư,
+                        cho khách
+                        hàng tại Việt Nam và cả trong khu vực.
+                    </p>
+                    <p style="font-size: 101%;padding-top: 5px;">Sứ mệnh của chúng tôi là mang lại giá trị tài chính cho
+                        nhà đầu tư, mang đến cuộc sống tươi đẹp cho cộng
+                        đồng và động lực làm việc cho nhân viên thông qua việc phát triểndoanh nghiệp theo hướng đa
+                        ngành nghề.</p>
+                    <div class="kiki">
+                        <span><a href="gioithieuchung.html" style="color: coral;">Tìm Hiểu Thêm</a></span>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-sm-6 " style="height: 415px; padding-top: 10px;" id="vdtrangchu1">
+                    <img src="images/vdtrangchu.gif" alt="anhvincom" style="width: 400p; max-height: 92%;">
+                </div>
+            </div>
+            <div class="row  aer" style="height: 218px; text-align: center;">
+                <div class="col-lg-3 col-sm-3 col-xs-6">
+                    <a href="duan.html"><div><i class="fas fa-city lm" style="font-size: 60px; margin-left: -40px;"></i></div>
+                    <div style="color: coral;font-size: 25px; padding: 50px 0px 0px 0px;font-weight: bold;">86</div>
+                    <div class="vv" style="font-size: 18px;padding: 20px 0px 0px 0px;">DỰ ÁN</div></a>
+                </div>
+                <div class="col-lg-3 col-sm-3 col-xs-6">
+                    <a href="lienhe.html"><div><i class="fas fa-map-marked-alt lm" style="font-size: 60px;margin-left: -36px;"></i></div>
+                    <div style="color: coral;font-size: 25px; padding: 50px 0px 0px 0px;font-weight: bold;">3</div>
+                    <div class="vv" style="font-size: 18px;padding: 20px 0px 0px 20px;">HỆ THỐNG CHI NHÁNH</div></a>
+                </div>
+                <div class="col-lg-3 col-sm-3 col-xs-6">
+                    <a href="vanhoa.html"><div><i class="fas fa-handshake lm" style="font-size: 60px; margin-left: -40px;"></i></div>
+                    <div style="color: coral;font-size: 25px; padding: 50px 0px 0px 0px;font-weight: bold;">51</div>
+                    <div class="vv" style="font-size: 18px;padding: 20px 0px 0px 0px;">ĐỐI TÁC</div></a>
+                </div>
+                <div class="col-lg-3 col-sm-3 col-xs-6">
+                    <a href="banlanhdao.html"><div><i class="fas fa-users lm" style="font-size: 60px; margin-left: -40px;"></i></div>
+                    <div style="color: coral;font-size: 25px; padding:50px 0px 0px 0px;font-weight: bold;">150</div>
+                    <div class="vv" style="font-size: 18px;padding: 20px 0px 0px 5px;">HỆ THỐNG NHÂN VIÊN</div></a>
+                </div>
+            </div>
+        </div>
+        <div class=" bgtranggiua">
+            <div id="" class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 col-xs-12"
+                        style="text-align: center;font-weight: bold;color: #fff;padding: 40px 0px 0px 10px; font-size: 18px;">
+                        ĐĂNG KÍ CỘNG TÁC BÁN HÀNG CÙNG ACTECH MIỀN TRUNG
+                        <hr width="200px; ">
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-xs-12"
+                        style="text-align: center; font-weight: bold;color: #fff;"> Đến với Actech để
+                        nhận chính sách khủng. Được “ứng trước” 20-25% hoa hồng sau khi khách
+                        hàng ký HD. Mức hoa hồng hưởng từ 50% – 60%. Được tư vấn & hỗ trợ kiến thức maketing trong suốt
+                        quá trình làm việc</div>
+
+                    <div>
+                        <form method="" action="">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="padding-top: 20px ; ">
+                                <input type="text" id="txtTen" placeholder="Họ tên*" required="true"
+                                    style="font-size: .97em;border-radius: 8px; padding: 0.75em;height: 2.507em;max-width: 100%;width: 100%;">
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12" style="padding-top: 20px ;">
+                                <input type="email" id="txtEmail" placeholder="Nhập Email(Nếu có)" required="true"
+                                    style="font-size: .97em;border-radius: 8px; padding: 0.75em;height: 2.507em;max-width: 100%;width: 100%;">
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12" style="padding-top: 20px ;">
+                                <input type="text" id="txtSdt" placeholder="Nhập Số Điện Thoại*" required="true"
+                                    style=" font-size: .97em; border-radius: 8px;padding: 0.75em;height: 2.507em;max-width: 100%;width: 100%;">
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12" style="padding-top: 20px ;">
+                                <select name="" id=""
+                                    style="height: 2.507em;max-width: 100%;width: 100%;font-size: .97em; border-radius: 8px;border: #fff;">
+                                    <option value="1">Cộng tác viên</option>
+                                    <option value="2">Khách hàng</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="padding-top: 20px ;">
+                                <input type="button" value="Đăng Ký"
+                                    style="font-size: .97em; border-radius: 8px;height: 2.507em;max-width: 100%;width: 100%;border: chocolate; background-color: chocolate;counter-reset: #fff;">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="" class="container">
+            <div class="row">
+                <h3 style="text-align: center;font-weight: bold;" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">DỰ ÁN
+                    BẤT ĐỘNG SẢN</h3>
+                <div style="text-align: center;">
+                    <div class="tomi1"></div>
+                    <div class="tomi2"></div>
+                    <div class="tomi3"></div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 10px;">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <!-- Slideshow 4 -->
+                    <div class="callbacks_container" >
+                        <ul class="rslides asf" id="slider4">
+                            <li>
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-4 col-xs-4"><img class="dg" src="images/anhcanho1.jpg" alt="Image 1"></div>
+                                    <div class="col-lg-4 col-sm-4 col-xs-4"><img class="dg" src="images/anhcanho2.jpg" 
+                                        alt="Image 1"></div>
+                                    <div class="col-lg-4 col-sm-4 col-xs-4"><img class="dg" src="images/anhcanho3.jpg" alt="Image 1"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-4 col-xs-4"><img class="dg" src="images/anhcanho2.jpg"  alt="Image 1"></div>
+                                    <div class="col-lg-4 col-sm-4 col-xs-4"><img class="dg" src="images/anhcanho3.jpg" alt="Image 1"></div>
+                                    <div class="col-lg-4 col-sm-4 col-xs-4"><img class="dg" src="images/anhcanho4.jpg" alt="Image 1"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-4 col-xs-4"><img class="dg" src="images/anhcanho3.jpg" alt="Image 1"></div>
+                                    <div class="col-lg-4 col-sm-4 col-xs-4"><img class="dg" src="images/anhcanho4.jpg" alt="Image 1"></div>
+                                    <div class="col-lg-4 col-sm-4 col-xs-4"><img class="dg" src="images/anhcanho5.jpg" alt="Image 1"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="display: flex;
+            align-items: center;
+            justify-content: center;">
+                <div class="kaka col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <span> <a href="duan.html" style="color: coral;">XEM TOÀN
+                            BỘ</a></span>
+                </div>
+            </div>
+            <div class="row">
+                <h3 style="text-align: center;font-weight: bold; padding-top: 45px;"
+                    class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    TIN TỨC</h3>
+                <div style="text-align: center;">
+                    <div class="tomi1"></div>
+                    <div class="tomi2"></div>
+                    <div class="tomi3"></div>
+                </div>
+                <div style="padding-top: 20px;">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style=" width: 324; ">
+                        <div style="background-color: #fff;">
+                            <img src="images/anhvanhoa.jpg" alt="" style="width: 100%;">
+                            <h5 style="font-weight: bold; ">
+                                Bất động sản và câu chuyện xây dựng văn hóa doanh nghiệp thời 4.0
+                            </h5>
+                            <div class="ytt"></div>
+                            <p>(ĐTCK) “Bão” cách mạng công nghiệp 4.0 đang tạo ra những mô thức kinh doanh mới...</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style=" width: 324; ">
+                        <div style="background-color: #fff;">
+                            <img src="images/anhtuyendung.png" alt="" style="width: 100%;height: 178.2px;">
+                            <h5 style="font-weight: bold; ">
+                                Chuyên Viên Kd Bất Động Sản Từ 50Triệu Đào Tạo Chuyên Nghiệp Từ Gốc / Có Lương Cứng
+                            </h5>
+                            <div class="ytt"></div>
+                            <p>Với quá trình được đào tạo miễn phí, cầm tay chỉ việc bởi chính những...</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style=" width: 324; ">
+                        <div style="background-color: #fff;">
+                            <img src="images/citydanang.jpg" alt="" style="width: 100%;height: 193.2px">
+                            <h5 style="font-weight: bold; ">
+                                Tại sao FPT City lại hấp dẫn nhà đầu tư đến vậy?
+                            </h5>
+                            <div class="ytt"></div>
+                            <p>Đà Nẵng đang là thị trường ưa chuộng của những nhà đầu tư địa ốc...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <h3 style="text-align: center;font-weight: bold; padding-top: 45px;"
+                    class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> ĐỐI TÁC CỘNG
+                    HÀNH</h3>
+                <div style="text-align: center;">
+                    <div class="tomi1"></div>
+                    <div class="tomi2"></div>
+                    <div class="tomi3"></div>
+                </div>
+                <div class="callbacks_container" style="margin-top: 27px;"> 
+                    <ul class="rslides asd" id="slider5">
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-3 col-xs-3"><img src="images/logo1.png" alt="Image 1"></div>
+                                <div class="col-lg-3 col-sm-3 col-xs-3"><img src="images/logo2.png" style=" max-width: 65%;
+                                    margin-left: 38px;"
+                                    alt="Image 1"></div>
+                                <div class="col-lg-3 col-sm-3 col-xs-3"><img src="images/logo3.png" alt="Image 1"></div>
+                                <div class="col-lg-3 col-sm-3 col-xs-3"><img src="images/logo4.png" alt="Image 1"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-3 col-xs-3"><img src="images/logo2.png" style=" max-width: 65%;
+                                    margin-left: 38px;" alt="Image 1"></div>
+                                <div class="col-lg-3 col-sm-3 col-xs-3"><img src="images/logo3.png" alt="Image 1"></div>
+                                <div class="col-lg-3 col-sm-3 col-xs-3"><img src="images/logo4.png" alt="Image 1"></div>
+                                <div class="col-lg-3 col-sm-3 col-xs-3"><img src="images/logo5.png" alt="Image 1"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-3 col-xs-3"><img src="images/logo3.png" alt="Image 1"></div>
+                                <div class="col-lg-3 col-sm-3 col-xs-3"><img src="images/logo4.png" alt="Image 1"></div>
+                                <div class="col-lg-3 col-sm-3 col-xs-3"><img src="images/logo5.png" alt="Image 1"></div>
+                                <div class="col-lg-3 col-sm-3 col-xs-3"><img src="images/logo6.png" alt="Image 1"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-3 col-xs-3"><img src="images/logo4.png" alt="Image 1"></div>
+                                <div class="col-lg-3 col-sm-3 col-xs-3"><img src="images/logo5.png" alt="Image 1"></div>
+                                <div class="col-lg-3 col-sm-3 col-xs-3"><img src="images/logo6.png" alt="Image 1"></div>
+                                <div class="col-lg-3 col-sm-3 col-xs-3"><img src="images/logo7.png" alt="Image 1"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-3 col-xs-3"><img src="images/logo5.png" alt="Image 1"></div>
+                                <div class="col-lg-3 col-sm-3 col-xs-3"><img src="images/logo6.png" alt="Image 1"></div>
+                                <div class="col-lg-3 col-sm-3 col-xs-3"><img src="images/logo7.png" alt="Image 1"></div>
+                                <div class="col-lg-3 col-sm-3 col-xs-3"><img src="images/logo8.png" alt="Image 1"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                
+
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+    <div class="ft bg-fill bg-loaded ft2 section-bg"> </div>
+
+    <div id="footer" class="footer1">
+        <div class="container" style="padding: 10px 0px 50px 0px;color:white">
+
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <a href="" id="logo1">
+                        <img style="width: 100%;" src="logo.ico" alt="logomacdinh">
+                    </a>
+                </div>
+
+                <div class="col-lg-5 col-md-5 ">
+                    <h5><b>CÔNG TY BẤT ĐỘNG SẢN ACTECH</b></h5>
+                    <i class="fas fa-map-marker-alt"></i> Địa chỉ:
+                    Tầng 5 , tòa nhà Bạch Đằng , 51 Xô Viết Nghệ Tĩnh , Hải Châu , Đà Nẵng<br>
+                    <i class="fas fa-phone-alt"></i> Điện thoại: 0905 692 314 <br>
+                    <i class="fas fa-envelope-square"></i> Email: sagovn.net@gmail.com
+                </div>
+                <div class="col-lg-4 col-md-4 lk">
+                    <h4> ĐĂNG KÍ BẢN TIN</h4>
+                    <input type="text" class="form-control" style="width: 60%; display: revert;margin-bottom: 13px;"
+                        placeholder="Nhập Email*">
+                    <input
+                        style="padding: 5px; background-color: coral; color: #fff; border-radius: 5px; border: coral;"
+                        type="button" value="Đăng ký" onclick="" /><br>
+                    <h5>Kết nối với chúng tôi </h5>
+                    <a href="https://www.facebook.com/softechaptech" ><i class="fab fa-facebook-f " style="padding-top: 5px;"></i></a>
+                    <a href=""><i class="fas fa-phone-alt" style="background-color: rgb(80, 245, 80); padding-top: 5px;"></i></a>
+                    <a href=" https://www.youtube.com/"><i class="fab fa-youtube-square" style="background-color: red; padding-top: 5px;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%;height: 50px;border-top:1px solid #ccc;"></div>
+
+    </div>
+    <div class="row1 col-lg-12 col-md-12 col-sm-12 col-xs-12 "
+        style="width: 100%;height: 45px;text-align: center; border:1px solid #ccc;position: fixed;bottom: 0px;z-index: 999;background: #3498db;">
+
+        <div style="width: 20%;">&nbsp;</div>
+        <div style="text-align: center;width: 20%; padding-top: 10px; color: #fff;"> HqvDoho</div>
+        <div
+            style="text-align: center; border-left: 1px solid #fff; color: #fff; border-right: 1px solid #fff; width: 20%; padding-top: 10px;">
+            Hotline: 09166065077</div>
+        <div style="text-align: center; width: 20%; padding-top: 10px; color: #fff;">Thiết kế web chuyên nghiệp hàng đầu
+            Việt Nam</div>
+        <div style="width: 20%;">&nbsp;</div>
+        <div class="slider" id="slider5">
+
+        </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,619 @@
+.header1 {
+  max-width: 100%;
+  width: 100%;
+  margin: 0px auto;
+  z-index: 50;
+  transition: background-color .3s, opacity .3s;
+}
+/* slider cuối của trang chủ */
+.asd img{
+  max-height: 62.5167px;
+}
+.asf img.dg{
+  max-height: 260px;
+  max-width: 348px;
+}
+
+
+#header {
+  background: url("../images/bg1.jpg") !important;
+  height: 94px;
+  border-bottom: 3px solid #e7a665;
+}
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+
+
+#bear {
+  display: none;
+}
+
+
+.menucon {
+  background: none;
+  border: none;
+}
+
+#logo {
+
+  padding: 5px 0px;
+}
+
+#logo img {
+  max-width: 140px;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+.chidan {
+  background: none;
+  border: none;
+
+}
+
+
+#main-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+#main-menu li {
+  position: relative;
+  /*làm chuẩn cho thuộc tính position: ab..*/
+}
+
+#messi i:hover {
+  color: #0313c5;
+}
+
+#main-menu li a {
+  color: #f8f8f8;
+  display: block;
+  padding: 30px 32px 30px 0px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: #bab7b7;
+}
+
+#main-menu ul.sub-menu {
+  position: absolute;
+  background-color: #f8f8f8;
+  padding: 15px 0px;
+  list-style: none;
+  /*làm mất đi dấu chấm của thẻ li*/
+  width: 250px;
+  display: none;
+  /*ẩn menu con*/
+  margin-top: -15px;
+  margin-left: 20px;
+}
+
+#menu2 ul.sub-menu1 {
+
+  list-style: none;
+  /*làm mất đi dấu chấm của thẻ li*/
+  width: 215px;
+  display: none;
+}
+
+#main-menu li:hover ul.sub-menu {
+  display: block;
+}
+
+#main-menu ul.sub-menu a {
+  padding: 10px 20px;
+  border-bottom: 1px solid rgb(185, 178, 178);
+}
+
+#main-menu ul.sub-menu li:hover a {
+  color: rgb(22, 22, 22);
+}
+
+#main-menu ul.sub-menu li:last-child a {
+  border: none;
+}
+
+#main-menu>li.has-child::after {
+
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  color: rgb(245, 244, 242);
+  position: absolute;
+  top: 1px;
+  right: 9px;
+  padding: 32px 10px;
+}
+
+.kss {
+  height: auto;
+  width: 45px;
+  line-height: 1;
+  box-shadow: none !important;
+  padding: 0;
+  color: currentColor;
+  opacity: .6;
+  margin: 0 5px 0 0;
+  background: none;
+  border: none;
+}
+
+/*kết thúc phần header*/
+/*phần ảnh chạy*/
+* {
+  box-sizing: border-box
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0
+}
+
+.mySlides {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.far {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+
+
+
+#menu2 {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu2 {
+
+  width: 260px;
+  height: 100%;
+  border: 1px solid #ccc;
+  position: fixed;
+  bottom: 0px;
+  z-index: 1666;
+  background-color: rgb(251, 250, 250);
+}
+
+
+
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+
+
+
+#vdtrangchu1 {
+  display: block;
+}
+
+#menu2 div ul li {
+  padding-top: 15px;
+  padding-left: 32px;
+  font-size: 17px;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+#menu2 div ul li a {
+  color: #3a3434;
+  text-decoration: none;
+}
+
+
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  #vdtrangchu1 {
+    display: none;
+  }
+
+}
+
+
+
+
+@media only screen and (max-width: 992px) {
+  #logo1 img {
+    width: 50% !important;
+  }
+
+  #main-menu {
+    display: none;
+  }
+
+  #bear {
+    display: block;
+  }
+
+}
+
+
+
+
+
+.bgtranggiua {
+  max-width: 100%;
+  margin: 0px auto;
+  background: url("../images/bg1.jpg") !important;
+  min-height: 270px;
+}
+
+
+
+
+.tomi1 {
+  width: 80px;
+  height: 2px;
+  display: inline-block;
+  background: #333;
+
+}
+
+
+
+.tomi2 {
+  display: inline-block;
+  height: 12px;
+  margin: 0 5px;
+  position: relative;
+  top: 5px;
+  width: 12px;
+  border: 1px solid #FFA777;
+  border-radius: 50px;
+}
+
+
+
+.tomi3 {
+  width: 80px;
+  height: 2px;
+  display: inline-block;
+  background: #333;
+}
+
+.timkiem{
+  background-color: coral;
+  border: coral;
+  width: 38px;
+  height: 39px;
+  margin-left: -6px;
+}
+.onhap{
+  height: 39px;
+  width: 292px;
+  padding-bottom: 3px;
+}
+.timkiem2{
+  background-color: coral;
+  border: coral;
+  width: 37px;
+  height: 28px;
+  margin-left: -4px;
+}
+
+.kiki {
+  border: 2px solid currentColor;
+  border-radius: 99px;
+  color: coral;
+  background-color: #fff;
+  display: block;
+  text-transform: uppercase;
+  font-weight: bolder;
+  min-height: 2.7em;
+  max-width: 159px;
+  text-align: center;
+  padding-top: 9px;
+}
+
+
+
+.chungh {
+  height: 300px;
+}
+
+/*trang giới thiệu chung*/
+
+.ytt {
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 20px;
+  margin-bottom: 4px;
+}
+
+
+
+
+.kaka {
+  border: 2px solid currentColor;
+  border-radius: 99px;
+  color: coral;
+  background-color: #fff;
+
+  font-weight: bolder;
+  max-width: 159px;
+  text-align: center;
+  padding-top: 9px;
+  padding-bottom: 4px;
+}
+
+
+
+.lh {
+  border: 1px solid #ddd;
+  border-color: rgba(0, 0, 0, 0.09);
+  border-radius: 6px;
+  padding: 0 .75em;
+  height: 2.507em;
+  font-size: .97em;
+  max-width: 100%;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*phần footer*/
+.footer1 {
+  max-width: 100%;
+  margin: 0px auto;
+  background: url("../images/bg1.jpg") !important;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+}
+
+#footer {
+  background-color: #06044b;
+
+
+}
+
+#logo1 {
+
+  padding: 5px 0px;
+}
+
+#logo1 img {
+  height: auto;
+}
+
+.fas {
+  width: 30px;
+
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  border-radius: 50%;
+  font-size: 20px;
+}
+#messi a i:hover{
+  
+  color: #fff;
+}
+#messi a:hover{
+  background-color: #0313c5;
+}
+.aer div  a {
+  color: rgb(9, 11, 14); /* Màu mặc định */
+  text-decoration: none; /* Loại bỏ gạch chân mặc định */
+}
+a div.vv:hover{
+  color: coral;
+}
+a div i.lm:hover{
+  color: rgb(68, 168, 255);
+}
+div.kaka span a {
+  text-decoration: none; /* Loại bỏ gạch chân mặc định */
+}
+
+.callbacks_nav{
+  background:none;
+  color: black;
+}
+div.lk a{
+  color: #fff;
+}
+
+.fab {
+  background: rgb(16, 24, 255);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.fcb {
+  width: 20px;
+  height: 0px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  border-radius: 50%;
+  font-size: 27px;
+
+}
+
+.container_swap {
+
+  width: 100%;
+
+}
+
+.row1 {
+  width: 100%;
+  display: flex;
+  flex-flow: nowrap;
+
+}
