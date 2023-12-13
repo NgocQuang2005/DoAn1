@@ -13,7 +13,21 @@
   max-height: 260px;
   max-width: 348px;
 }
-
+.lich{
+  position: absolute;
+  top: 0; 
+  left: 0;
+  background: #d2cdcd;
+  padding: 3px 7px;
+  border-radius: 2;
+  color: chocolate;
+  border: 2px solid chocolate; 
+  text-align: center;
+}
+.lich:hover {
+  background-color: chocolate;
+  color: #ddd;
+}
 
 #header {
   background: url("../images/bg1.jpg") !important;
