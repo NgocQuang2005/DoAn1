@@ -36,7 +36,9 @@
 }
 
 
-
+.hover_nav:hover{
+  color: coral !important;
+}
 nav {
   display: flex;
   justify-content: space-between;
