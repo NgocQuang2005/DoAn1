@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/app.css">
     <!-- Latest compiled and minified CSS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
@@ -18,44 +20,7 @@
     <!-- <link rel="stylesheet" href="font/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="css/responsiveslides.css">
     <link rel="stylesheet" href="css/demo.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script src="js/responsiveslides.min.js"></script>
-    <script>
-        // You can also use "$(window).load(function() {"
-        $(function () {
-
-            // Slideshow 4
-            $("#slider4").responsiveSlides({
-                auto: false,
-                pager: false,
-                nav: true,
-                speed: 500,
-                namespace: "callbacks",
-                before: function () {
-                    $('.events').append("<li>before event fired.</li>");
-                },
-                after: function () {
-                    $('.events').append("<li>after event fired.</li>");
-                }
-            });
-            $("#slider5").responsiveSlides({
-                auto: false,
-                pager: false,
-                nav: true,
-                speed: 500,
-                namespace: "callbacks",
-                before: function () {
-                $('.events').append("<li>before event fired.</li>");
-                },
-                after: function () {
-                $('.events').append("<li>after event fired.</li>");
-                }
-            });
-        });
-    </script>
-    <style>
-        .callbacks{width: 90%;margin: 0 5%;}
-    </style>
+    
 </head>
 
 <body>
@@ -136,39 +101,7 @@
             </div>
         </div>
 
-        <script>
-            function menunho() {
-                if (document.getElementById('menu2').style.display == 'block') {
-                    document.getElementById('menu2').style.display = 'none';
-                } else {
-                    document.getElementById('menu2').style.display = 'block';
-                }
-
-            }
-            function hien1() {
-                if (document.getElementById('hien').style.display == 'block') {
-                    document.getElementById('hien').style.display = 'none';
-                } else {
-                    document.getElementById('hien').style.display = 'block';
-                }
-
-            }
-            function hien2() {
-                if (document.getElementById('xhien').style.display == 'block') {
-                    document.getElementById('xhien').style.display = 'none';
-                } else {
-                    document.getElementById('xhien').style.display = 'block';
-                }
-
-            }
-            function hien3() {
-                if (document.getElementById('hienra').style.display == 'block') {
-                    document.getElementById('hienra').style.display = 'none';
-                } else {
-                    document.getElementById('hienra').style.display = 'block';
-                }
-            }
-        </script>
+       
         
         <div id="" class="container">
             <div class="row">
@@ -235,29 +168,7 @@
             </div>
         </div>
     </div>
-    <script>
-        function showHide() {
-            if (document.getElementById('Search').style.display == 'block') {
-                document.getElementById('Search').style.display = 'none';
-            } else {
-                document.getElementById('Search').style.display = 'block';
-            }
-        }
-    </script>
-    <script>
-        $(document).ready(function () {
-            $('.sub-menu').parent('li').addClass('has-child');
-        });
-        window.onscroll = function () {
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                document.getElementById("header").style.position = "fixed";
-                $("#header").hide();
-                $("#header").slideDown(300);
-            } else {
-                document.getElementById("header").style.position = "relative";
-            }
-        };
-    </script>
+    
 
     <div id="wp-content" style=" background-color: #d2cdcd; ">
         <div class="slideshow-container">
@@ -292,34 +203,7 @@
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
 
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("dot");
-                if (n > slides.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = slides.length }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-            }
-        </script>
+        
         <div id="" class="container">
             <div class="row" style="margin-bottom: 5px;">
                 <div class="col-lg-6 col-sm-6 col-xs-12">
@@ -471,7 +355,7 @@
                 </div>
                 <div style="padding-top: 20px;">
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style=" width: 324;max-height: 290px; ">
-                        <a href="" style="text-decoration: none; color: black;">
+                        <a href="./Massage.html" style="text-decoration: none; color: black;">
                             <div style="background-color: #fff;">
                                 <img src="images/img_tt.jpg" alt="" style="width: 100%; max-height: 192px;">
                                 <h5 style="font-weight: bold; ">
@@ -483,7 +367,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style=" width: 324; max-height: 290px;">
-                        <a href="" style="text-decoration: none; color: black;">
+                        <a href="./Medical.html" style="text-decoration: none; color: black;">
                             <div style="background-color: #fff;">
                                 <img src="images/img_tt1.jpg" alt="" style="width: 100%;max-height: 192px;">
                                 <h5 style="font-weight: bold; ">
@@ -495,7 +379,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style=" width: 324; max-height: 290px;">
-                        <a href="" style="text-decoration: none; color: black;">
+                        <a href="./Beauty.html" style="text-decoration: none; color: black;">
                             <div style="background-color: #fff;">
                                 <img src="images/img_tt2.webp" alt="" style="width: 100%;height: 193.2px">
                                 <h5 style="font-weight: bold; ">
@@ -626,8 +510,126 @@
         <div class="slider" id="slider5">
 
     </div>
+    <script>
+        // You can also use "$(window).load(function() {"
+        $(function () {
 
+            // Slideshow 4
+            $("#slider4").responsiveSlides({
+                auto: false,
+                pager: false,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+            $("#slider5").responsiveSlides({
+                auto: false,
+                pager: false,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                $('.events').append("<li>after event fired.</li>");
+                }
+            });
+        });
+    </script>
+    <style>
+        .callbacks{width: 90%;margin: 0 5%;}
+    </style>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
 
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <script>
+        function showHide() {
+            if (document.getElementById('Search').style.display == 'block') {
+                document.getElementById('Search').style.display = 'none';
+            } else {
+                document.getElementById('Search').style.display = 'block';
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.sub-menu').parent('li').addClass('has-child');
+        });
+        window.onscroll = function () {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").style.position = "fixed";
+                $("#header").hide();
+                $("#header").slideDown(300);
+            } else {
+                document.getElementById("header").style.position = "relative";
+            }
+        };
+    </script>
+     <script>
+        function menunho() {
+            if (document.getElementById('menu2').style.display == 'block') {
+                document.getElementById('menu2').style.display = 'none';
+            } else {
+                document.getElementById('menu2').style.display = 'block';
+            }
+
+        }
+        function hien1() {
+            if (document.getElementById('hien').style.display == 'block') {
+                document.getElementById('hien').style.display = 'none';
+            } else {
+                document.getElementById('hien').style.display = 'block';
+            }
+
+        }
+        function hien2() {
+            if (document.getElementById('xhien').style.display == 'block') {
+                document.getElementById('xhien').style.display = 'none';
+            } else {
+                document.getElementById('xhien').style.display = 'block';
+            }
+
+        }
+        function hien3() {
+            if (document.getElementById('hienra').style.display == 'block') {
+                document.getElementById('hienra').style.display = 'none';
+            } else {
+                document.getElementById('hienra').style.display = 'block';
+            }
+        }
+    </script>
 </body>
 
 </html>
