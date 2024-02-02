@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đất Nền</title>
+    <title>Massage</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/zyro-image.png" type="images/x-icon">
     <link rel="stylesheet" href="css/app.css">
@@ -198,33 +198,7 @@
             </div>
         </div>
     </div>
-    <script>
-        function showHide() {
-            if (document.getElementById('Search').style.display == 'block') {
-                document.getElementById('Search').style.display = 'none';
-            } else {
-                document.getElementById('Search').style.display = 'block';
-            }
-
-        }
-    </script>
-    <script>
-        $(document).ready(function () {
-            $('.sub-menu').parent('li').addClass('has-child');
-
-        });
-        window.onscroll = function () {
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                document.getElementById("header").style.position = "fixed";
-                $("#header").hide();
-                $("#header").slideDown(300);
-            } else {
-                document.getElementById("header").style.position = "relative";
-
-            }
-        };
-
-    </script>
+   
 
 
 
@@ -232,7 +206,9 @@
         <div id="wrapper" class="container">
             <div class="row">
                 <div class="col-lg-7 col-xs-12 col-sm-12">
-                    <h4 style="padding: 30px 0px 40px 0px ;">TRANG CHỦ / Dự Án /<b> Đất Nền</b> </h4>
+                    <h4 style="padding: 30px 0px 40px 0px ;"><a href="./Home.html" style="text-decoration: none;color: #0b0b0b; ">Home</a> 
+                        / <a href="./Service.html"  style="text-decoration: none; color: #0b0b0b;">Service </a>
+                        /<b> Massage</b> </h4>
                 </div>
                 <div class="col-lg-5 col-xs-12 col-sm-12" style="padding: 30px 0px 40px 0px ;">
                     <p style="display: inline-block;
@@ -241,12 +217,13 @@
                         <div style="display: inline-block; margin: 5px 0;">
                             <select name="" id="" style="margin: 5px 0;
                             display: inline-block;">
-                                <option value="1">Thứ tự mặc định</option>
+                                <option value="1">Tất cả các gói</option>
                                 <option value="2">Thứ tự theo mức độ phổ biến</option>
                                 <option value="3">Thứ tự theo điểm đánh giá</option>
                                 <option value="4">Mới nhất</option>
-                                <option value="5">Thứ tự theo giá: Thấp đến cao</option>
-                                <option value="6">Thứ tự theo giá: Cao đến Thấp</option>
+                                <option value="5">Gói Massage 299k</option>
+                                <option value="6">Gói Massage 449k</option>
+                                <option value="7">Gói Massage 199k</option>
                             </select>
                         </div>
                     </form>
@@ -314,7 +291,33 @@
         <div class="slider" id="slider5">
 
     </div>
+    <script>
+        function showHide() {
+            if (document.getElementById('Search').style.display == 'block') {
+                document.getElementById('Search').style.display = 'none';
+            } else {
+                document.getElementById('Search').style.display = 'block';
+            }
 
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.sub-menu').parent('li').addClass('has-child');
+
+        });
+        window.onscroll = function () {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").style.position = "fixed";
+                $("#header").hide();
+                $("#header").slideDown(300);
+            } else {
+                document.getElementById("header").style.position = "relative";
+
+            }
+        };
+
+    </script>
 </body>
 
 </html>

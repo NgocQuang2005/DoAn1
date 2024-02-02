@@ -220,8 +220,8 @@
                     </div>
 
                 </div>
-                <div class="col-lg-6 col-sm-6 " style="height: 415px; padding-top: 10px;" id="vdtrangchu1">
-                    <img src="images/vdtrangchu.gif" alt="anhvincom" style="max-width: 387px; max-height: 92%;">
+                <div class="col-lg-6 col-sm-6 " style="height: 100%;  padding-top: 10px;" id="vdtrangchu1">
+                    <img src="images/vdtrangchu.gif" alt="anhvincom" style="width: 100%; height: 100%;">
                 </div>
             </div>
             <div class="row  aer" style="height: 218px; text-align: center;">
@@ -514,10 +514,14 @@
 
             // Slideshow 4
             $("#slider4").responsiveSlides({
-                auto: false,
+                auto: true,
+                speed:500,
+                timeout:4000,
                 pager: false,
                 nav: true,
                 speed: 500,
+                prevText: "Trước",
+                nextText:"Sau",
                 namespace: "callbacks",
                 before: function () {
                     $('.events').append("<li>before event fired.</li>");
@@ -527,7 +531,9 @@
                 }
             });
             $("#slider5").responsiveSlides({
-                auto: false,
+                auto: true,
+                speed:500,
+                timeout:4000,
                 pager: false,
                 nav: true,
                 speed: 500,
