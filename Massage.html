@@ -198,6 +198,36 @@
             </div>
         </div>
     </div>
+    <div class="showdatlich" id="datphongkham">
+        <input type="button" value="X" onclick="showdatlich()" style="font-size: 30px; background: none; border: none; color: #000000; float: right;
+        padding-right: 28px;" />
+        <div style="padding-top: 40px; padding-left: 20px; ">
+            <input type="text" name="" id="" placeholder="Họ Và Tên " style="margin-bottom: 15px; width: 457px; height: 35px; border-radius: 4px;" > 
+            <br>
+            <input type="date" style="margin-bottom: 15px ;  width: 457px;  height: 35px; border-radius: 4px;" >
+            <br>
+            <input type="text" name="" id="" placeholder="Số điện thoại " style="margin-bottom: 15px;  width: 457px;  height: 35px; border-radius: 4px;" >
+            <br>
+            <form method="" action="" style="display: inline-block;" >
+                <div style="display: inline-block; margin: 5px 0; ">
+                    <select name="" id="" style=" width: 457px;  height: 35px;
+                    display: inline-block;">
+                        <option value="1">Tất cả các gói</option>
+                        <option value="2">Thứ tự theo mức độ phổ biến</option>
+                        <option value="3">Thứ tự theo điểm đánh giá</option>
+                        <option value="4">Mới nhất</option>
+                        <option value="5">Gói Massage 539k</option>
+                        <option value="6">Gói Massage 449k</option>
+                        <option value="7">Gói Massage 199k</option>
+                    </select>
+                </div>
+            </form>
+            <br>
+            <button type="button" style="padding: 3px 17px; background-color: coral; color: #fff; border: coral; border-radius: 3px; margin-top: 20px;"  onclick="showdatlich()">
+                OK
+            </button>
+        </div>
+    </div>
    
 
 
@@ -264,7 +294,8 @@
                             </ol>
                         </div>
                         <div>
-                            <button style="background-color: coral;color: white; padding: 4px 7px; border-color: coral; border-radius: 3px;">
+                            <button style="background-color: coral;color: white; padding: 4px 7px; border-color: coral; border-radius: 3px;"
+                            onclick="showdatlich()">
                                 Đặt lịch
                             </button>
                         </div>
@@ -304,7 +335,8 @@
                             </ol>
                         </div>
                         <div>
-                            <button style="background-color: coral; color: white; padding: 4px 7px; border-color: coral; border-radius: 3px;">
+                            <button style="background-color: coral; color: white; padding: 4px 7px; border-color: coral; border-radius: 3px;"
+                            onclick="showdatlich()">
                                 Đặt lịch
                             </button>
                         </div>
@@ -335,7 +367,7 @@
                             </ol>
                         </div>
                         <div>
-                            <button style="background-color: coral; color: white; padding: 4px 7px; border-color: coral; border-radius: 3px;">
+                            <button style="background-color: coral; color: white; padding: 4px 7px; border-color: coral; border-radius: 3px;" onclick="showdatlich()">
                                 Đặt lịch
                             </button>
                         </div>
@@ -375,13 +407,14 @@
                             </ol>
                         </div>
                         <div>
-                            <button style="background-color: coral; color: white; padding: 4px 7px; border-color: coral; border-radius: 3px;">
-                                Đặt lịch1
+                            <button style="background-color: coral; color: white; padding: 4px 7px; border-color: coral; border-radius: 3px;" onclick="showdatlich()">
+                                Đặt lịch
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
     </div>
@@ -442,6 +475,16 @@
                 document.getElementById('Search').style.display = 'none';
             } else {
                 document.getElementById('Search').style.display = 'block';
+            }
+
+        }
+    </script>
+    <script>
+        function showdatlich() {
+            if (document.getElementById('datphongkham').style.display == 'block') {
+                document.getElementById('datphongkham').style.display = 'none';
+            } else {
+                document.getElementById('datphongkham').style.display = 'block';
             }
 
         }

@@ -633,3 +633,17 @@ div.lk a{
   flex-flow: nowrap;
 
 }
+.showdatlich{
+  display: none;
+  z-index: 9999;
+  width: 550px;
+  height: 330px;
+  background-color: rgb(227, 232, 236);
+  top: 10;
+  opacity: .9;
+  position: fixed;
+  margin-left: 450px;
+ border-radius: 6px;
+ justify-content: center; 
+ align-items: center;
+}
