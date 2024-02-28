@@ -642,8 +642,30 @@ div.lk a{
   top: 10;
   opacity: .9;
   position: fixed;
-  margin-left: 450px;
+ 
  border-radius: 6px;
- justify-content: center; 
- align-items: center;
+
 }
+@media only screen and (min-width: 1485px) {
+  .showdatlich{
+    margin-left: 450px;
+  }
+}
+#backtop1{
+  width: 50px;
+  height: 50px;
+  background-color: coral;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  border-radius: 50%;
+  bottom: 70px;
+  right: 20px;
+}
+#backtop1:hover{
+  background-color: rgb(237, 32, 32);
+}
+
+

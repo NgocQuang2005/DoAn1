@@ -11,7 +11,7 @@
     <!-- Latest compiled and minified CSS -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/responsiveslides.min.js"></script>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,6 +25,7 @@
 </head>
 
 <body>
+    
     <div id="header" class="header1" style="height: 81px;">
         <div class="  col-sm-3 col-xs-3 " id="bear" style="padding-top: 20px;">
             <button class="menucon" type="button" data-toggle="collapse" onclick="menunho()">
@@ -451,15 +452,11 @@
 
             </div>
         </div>
-
-
-
-
-
-
     </div>
+    
     <div class="ft bg-fill bg-loaded ft2 section-bg"> </div>
-
+    
+    
     <div id="footer" class="footer1">
         <div class="container" style="padding: 10px 0px 50px 0px;color:white">
 
@@ -508,6 +505,26 @@
         <div class="slider" id="slider5">
 
     </div>
+    <div id="backtop1">
+        <i class="fas fa-chevron-up" style="padding-top: 4px;">
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if ($(this).scrollTop()){
+                    $('#backtop1').fadeIn();
+                }else{
+                    $('#backtop1').fadeOut();
+                }
+            });
+            $('#backtop1').click(function(){
+                $("html, body").animate({ 
+                    scrollTop: 0 
+                }, 800);
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script>
         // You can also use "$(window).load(function() {"
         $(function () {
@@ -634,6 +651,7 @@
             }
         }
     </script>
+    
 </body>
 
 </html>
