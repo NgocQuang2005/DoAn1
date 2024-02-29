@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>căn hộ</title>
+    <title>Beauty-support</title>
     <link rel="icon" href="Logo1.png" type="images/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/app.css">
@@ -198,33 +198,7 @@
             </div>
         </div>
     </div>
-    <script>
-        function showHide() {
-            if (document.getElementById('Search').style.display == 'block') {
-                document.getElementById('Search').style.display = 'none';
-            } else {
-                document.getElementById('Search').style.display = 'block';
-            }
-
-        }
-    </script>
-    <script>
-        $(document).ready(function () {
-            $('.sub-menu').parent('li').addClass('has-child');
-
-        });
-        window.onscroll = function () {
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                document.getElementById("header").style.position = "fixed";
-                $("#header").hide();
-                $("#header").slideDown(300);
-            } else {
-                document.getElementById("header").style.position = "relative";
-
-            }
-        };
-
-    </script>
+    
 
 
 
@@ -232,9 +206,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-xs-12 col-sm-12">
-                    <h4 style="padding: 30px 0px 40px 0px ;">TRANG CHỦ / Dự Án /<b> Căn Hộ</b> </h4>
+                    <h4 ><a href="./Home.html" style="text-decoration: none;color: #0b0b0b; ">Home</a> 
+                        / <a href="./Service.html"  style="text-decoration: none; color: #0b0b0b;">Service </a>
+                        /<b> Beauty-support</b> </h4>
                 </div>
-                <div class="col-lg-5 col-xs-12 col-sm-12" style="padding: 30px 0px 40px 0px ;">
+                <div class="col-lg-5 col-xs-12 col-sm-12">
                     <p style="display: inline-block;
                     margin: 0 1em 0 auto;">Showing all 5 results</p>
                     <form method="" action="" style="display: inline-block;">
@@ -253,44 +229,163 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-sm-4 col-xs-6 ">
-                    <img src="images/anhcanho1.jpg" alt="" style=" width: 98%;">
-                    <div style="font-weight: bold; font-size: 17px; padding: 10px 18px;font-family: monospace;">
-                        FPT CITY ĐÀ NẴNG
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="col-lg-3 col-sm-4 col-xs-12">
+                        <img src="images/img_dv3.jpg" alt="" style=" width: 98%;">
                     </div>
-                    <div class="lich"> 21 <br> TH9</div>
-                   
+                    <div class="col-lg-9 col-sm-8 col-xs-12">
+                        <h2> Gói Chăm Sóc Da Cơ Bản</h2>
+                        <h4>
+                            <label for="" style="color: red;"> 259k <del style="color: #232323;">300k</del></label>
+                        </h4>
+                        <h4 style="color: chocolate;">Thời gian : 60 phút</h4>
+                        <div>
+                            <ol>
+                                <li>
+                                    Chuyên gia trực tiếp khám và lên lộ trình chăm sóc da
+                                </li>
+                                <li>
+                                    Tẩy trang và rửa mặt bằng sản phẩm phù hợp
+                                <li>
+                                    Tẩy tế bào chết để loại bỏ bụi bẩn sâu trong da
+                                </li>
+                                <li>
+                                    Xông hơi nóng
+                                </li>
+                                <li>
+                                    Hút bã nhờn, dầu và mụn cám trên mặt
+                                </li>  
+                                <li>
+                                    Massage da mặt
+                                </li>
+                                <li>
+                                    Đắp mặt nạ dưỡng da, xoa bóp cổ vai gáy cho khách
+                                </li>
+                                <li>
+                                    Bỏ mặt nạ, làm sạch da và thoa nước hoa hồng/toner
+                                </li><li>
+                                    Bôi kem chống nắng (nếu là ban ngày)
+                                </li>
+                            </ol>
+                        </div>
+                        <div>
+                            <button style="background-color: coral;color: white; padding: 4px 7px; border-color: coral; border-radius: 3px;"
+                            onclick="showdatlich()">
+                                Đặt lịch
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-sm-4 col-xs-6">
-                    <img src="images/anhcanho2.jpg" alt="" style=" width: 98%;">
-                    <div style="font-weight: bold; font-size: 17px; padding: 10px 18px;font-family: monospace;">
-                        Hòa Bình Green Đà Nẵng
+                <hr class="col-lg-12 col-md-12 col-sm-12"  style="border: 1px solid burlywood;">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="col-lg-3 col-sm-4 col-xs-12">
+                        <img src="images/img_dv4.jpg" alt="" style=" width: 98%;">
                     </div>
-                    <div class="lich"> 21 <br> TH5</div>
+                    <div class="col-lg-9 col-sm-8 col-xs-12">
+                        <h2> Gói Chăm Sóc Da Chuyên Sâu</h2>
+                        <h4>
+                            <label for="" style="color: red;"> 339k <del style="color: #232323;">400k</del></label>
+                        </h4>
+                        <h4 style="color: chocolate;">Thời gian : 80 phút</h4>
+                        <div>
+                            <ol>
+                                <li>
+                                    Làm sạch da gồm tẩy trang, rửa mặt và tẩy tế bào chết
+                                </li>
+                                <li>
+                                    Dùng tinh dầu tự nhiên để xông hơi nóng da mặt
+                                </li>
+                                <li>
+                                    Sử dụng công cụ hút sạch dầu, bã nhờn trên mặt
+                                </li>
+                                <li>
+                                    Trộn tinh dầu tự nhiên cùng vitamin E để massage da mặt trong 15 phút
+                                </li>
+                                <li>
+                                    Đắp mặt nạ ngũ hoa hoặc mặt nạ vàng để cấp ẩm và se khít lỗ chân lông
+                                </li>  
+                                <li>
+                                    Làm sạch da mặt một lần nữa
+                                </li>
+                                <li>
+                                    Thoa nước hoa hồng hoặc toner
+                                </li>  
+                                <li>
+                                    Bôi kem chống nắng (nếu là ban ngày)
+                                </li>
+                            </ol>
+                        </div>
+                        <div>
+                            <button style="background-color: coral; color: white; padding: 4px 7px; border-color: coral; border-radius: 3px;"
+                            onclick="showdatlich()">
+                                Đặt lịch
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-sm-4 col-xs-6">
-                    <img src="images/anhcanho3.jpg" alt="" style=" width: 98%;">
-                    <div style="font-weight: bold; font-size: 17px; padding: 10px 18px;font-family: monospace;">
-                        HỘI AN GOLDEN SEA
+                <hr class="col-lg-12 col-md-12 col-sm-12"  style="border: 1px solid burlywood;">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="col-lg-3 col-sm-4 col-xs-12">
+                        <img src="images/img_dv.jpg" alt="" style=" width: 98%;">
                     </div>
-                    <div class="lich"> 13 <br> TH7</div>
+                    <div class="col-lg-9 col-sm-8 col-xs-12">
+                        <h2> Dịch vụ Trẻ Hóa Da</h2>
+                        <div>
+                            <ol>
+                                <li>
+                                    400.000 – 600.000 VNĐ để đắp mặt nạ trẻ hóa da Omega
+                                </li>
+                                <li>
+                                    700.00 – 1.000.000 VNĐ cho phương pháp trẻ hóa da bằng oxy tinh khiết kết hợp với mặt nạ vàng 
+                                </li>
+                                <li>
+                                    1.000.000 – 2.000.000 với dịch vụ loại bỏ nếp nhăn và nâng cơ công nghệ cao
+                                </li>
+                            </ol>
+                        </div>
+                        <div>
+                            <button style="background-color: coral; color: white; padding: 4px 7px; border-color: coral; border-radius: 3px;" onclick="showdatlich()">
+                                Đặt lịch
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-sm-4 col-xs-6">
-                    <img src="images/anhcanho4.jpg" alt="" style=" width: 98%;">
-                    <div style="font-weight: bold; font-size: 17px; padding: 10px 0px 10px 5px;font-family: monospace;">
-                        HOMELAND PARADISE VILLAGE
+                <hr class="col-lg-12 col-md-12 col-sm-12"  style="border: 1px solid burlywood;">
+                <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+                    <div class="col-lg-3 col-sm-4 col-xs-12">
+                        <img src="images/bty1.jpg" alt="" style=" width: 98%;">
                     </div>
-                    <div class="lich"> 21 <br> TH9</div>
-                </div>
-                <div class="col-lg-3 col-sm-4 col-xs-6" style="padding-top: 10px;">
-                    <img src="images/anhcanho5.jpg" alt="" style=" width: 98%;">
-                    <div style="font-weight: bold; font-size: 17px; padding: 10px 18px;font-family: monospace;">
-                        NHƠN HỘI NEW CITY - PHÂN KHU 2
+                    <div class="col-lg-9 col-sm-8 col-xs-12">
+                        <h2> Gói Làm Trắng Da </h2>
+                        <h4>
+                            <label for="" style="color: rgb(0, 0, 0);"> 400k-2000k </label>
+                        </h4>
+                        <h4 style="color: chocolate;">Thời gian : 80 phút</h4>
+                        <div>
+                            <ol>
+                                <li>
+                                    Dùng vitamin làm trắng da
+                                </li>
+                                <li>
+                                    Trẻ hóa và làm trắng da bằng DNA cá hồi 
+                                </li>
+                                <li>
+                                    Làm trắng da và loại bỏ tàn nhan bằng sản phẩm
+                                </li>
+                                <li>
+                                    Dùng hợp chất 3D làm trắng da
+                                </li>
+                                
+                            </ol>
+                        </div>
+                        <div>
+                            <button style="background-color: coral; color: white; padding: 4px 7px; border-color: coral; border-radius: 3px;" onclick="showdatlich()">
+                                Đặt lịch
+                            </button>
+                        </div>
                     </div>
-                    <div class="lich"> 17 <br> TH4</div>
                 </div>
             </div>
-
         </div>
     </div>
     </div>
@@ -345,7 +440,33 @@
         <div class="slider" id="slider5">
 
     </div>
+    <script>
+        function showHide() {
+            if (document.getElementById('Search').style.display == 'block') {
+                document.getElementById('Search').style.display = 'none';
+            } else {
+                document.getElementById('Search').style.display = 'block';
+            }
 
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.sub-menu').parent('li').addClass('has-child');
+
+        });
+        window.onscroll = function () {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").style.position = "fixed";
+                $("#header").hide();
+                $("#header").slideDown(300);
+            } else {
+                document.getElementById("header").style.position = "relative";
+
+            }
+        };
+
+    </script>
 </body>
-
+ 
 </html>
