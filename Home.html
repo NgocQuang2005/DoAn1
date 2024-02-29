@@ -182,7 +182,7 @@
 
             <div class="mySlides ">
                 <div class="numbertext">2 / 3</div>
-                <img src="images/slider2.jpg" style="width:100%; height: 500px;">
+                <img src="images/Đào tạo massage spa.jpg" style="width:100%; height: 500px;">
                 <div class="text">Caption Two</div>
             </div>
 
@@ -230,22 +230,22 @@
             <div class="row  aer" style="height: 218px; text-align: center;">
                 <div class="col-lg-3 col-sm-3 col-xs-6">
                     <a href="Service.html"><div><i class="fas fa-city lm" style="font-size: 60px; margin-left: -40px;"></i></div>
-                    <div style="color: coral;font-size: 25px; padding: 50px 0px 0px 0px;font-weight: bold;">15</div>
+                    <div style="color: coral;font-size: 25px; padding: 50px 0px 0px 0px;font-weight: bold;" id="da_1">15</div> 
                     <div class="vv" style="font-size: 18px;padding: 20px 0px 0px 0px;">DỰ ÁN</div></a>
                 </div>
                 <div class="col-lg-3 col-sm-3 col-xs-6">
                     <a href="lienhe.html"><div><i class="fas fa-map-marked-alt lm" style="font-size: 60px;margin-left: -36px;"></i></div>
-                    <div style="color: coral;font-size: 25px; padding: 50px 0px 0px 0px;font-weight: bold;">3</div>
+                    <div style="color: coral;font-size: 25px; padding: 50px 0px 0px 0px;font-weight: bold;" id="ht_1">3</div>
                     <div class="vv" style="font-size: 18px;padding: 20px 0px 0px 20px;">HỆ THỐNG CHI NHÁNH</div></a>
                 </div>
                 <div class="col-lg-3 col-sm-3 col-xs-6">
                     <a href="vanhoa.html"><div><i class="fas fa-handshake lm" style="font-size: 60px; margin-left: -40px;"></i></div>
-                    <div style="color: coral;font-size: 25px; padding: 50px 0px 0px 0px;font-weight: bold;">5</div>
+                    <div style="color: coral;font-size: 25px; padding: 50px 0px 0px 0px;font-weight: bold;" id="dt_1">5</div>
                     <div class="vv" style="font-size: 18px;padding: 20px 0px 0px 0px;">ĐỐI TÁC</div></a>
                 </div>
                 <div class="col-lg-3 col-sm-3 col-xs-6">
                     <a href="banlanhdao.html"><div><i class="fas fa-users lm" style="font-size: 60px; margin-left: -40px;"></i></div>
-                    <div style="color: coral;font-size: 25px; padding:50px 0px 0px 0px;font-weight: bold;">150</div>
+                    <div style="color: coral;font-size: 25px; padding:50px 0px 0px 0px;font-weight: bold;" id="nv_1">150</div>
                     <div class="vv" style="font-size: 18px;padding: 20px 0px 0px 5px;">HỆ THỐNG NHÂN VIÊN</div></a>
                 </div>
             </div>
@@ -357,7 +357,7 @@
                 <div style="padding-top: 20px;">
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style=" width: 324;max-height: 290px; ">
                         <a href="./Massage.html" style="text-decoration: none; color: black;">
-                            <div style="background-color: #fff;">
+                            <div style="background-color: #e4e1e1;">
                                 <img src="images/img_tt.jpg" alt="" style="width: 100%; max-height: 192px;">
                                 <h5 style="font-weight: bold; ">
                                     Dịch vụ massage chỉ với 299k và những gói ưu đãi khác...
@@ -369,7 +369,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style=" width: 324; max-height: 290px;">
                         <a href="./Medical.html" style="text-decoration: none; color: black;">
-                            <div style="background-color: #fff;">
+                            <div style="background-color: #e4e1e1;">
                                 <img src="images/img_tt1.jpg" alt="" style="width: 100%;max-height: 192px;">
                                 <h5 style="font-weight: bold; ">
                                     Dịch vụ khám và chăm sóc sức khỏe với các bác sỹ hàng đầu việt nam , máy móc hiện đại.
@@ -381,7 +381,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style=" width: 324; max-height: 290px;">
                         <a href="./Beauty.html" style="text-decoration: none; color: black;">
-                            <div style="background-color: #fff;">
+                            <div style="background-color: #e4e1e1;">
                                 <img src="images/img_tt2.webp" alt="" style="width: 100%;height: 193.2px">
                                 <h5 style="font-weight: bold; ">
                                     Nơi làm đẹp uy tín , liên kết với các công ty làm đẹp lớn nhất Việt Nam...
@@ -653,7 +653,41 @@
             }
         }
     </script>
-    
+    <script>
+        function animateNumber(finalNumber, delay, startNumber = 0, callback) {
+            let currentNumber = startNumber
+            const interval = window.setInterval(updateNumber, delay)
+        function updateNumber() {
+            if (currentNumber >= finalNumber) {
+            clearInterval(interval)
+            } else {
+            currentNumber++
+            callback(currentNumber)
+            }
+        }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+        animateNumber(10, 200, 0, function (number) {
+            const formattedNumber = number.toLocaleString()
+            document.getElementById('da_1').innerText = formattedNumber
+        })
+        
+        animateNumber(7, 200, 0, function (number) {
+            const formattedNumber = number.toLocaleString()
+            document.getElementById('ht_1').innerText = formattedNumber
+        })
+        
+        animateNumber(20, 150, 0, function (number) {
+            const formattedNumber = number.toLocaleString()
+            document.getElementById('dt_1').innerText = formattedNumber
+        })
+        animateNumber(500, 10, 0, function (number) {
+            const formattedNumber = number.toLocaleString()
+            document.getElementById('nv_1').innerText = formattedNumber
+        })
+        })
+      </script>
 </body>
 
 </html>
