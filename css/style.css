@@ -30,7 +30,7 @@
 }
 
 #header {
-  background: url("../images/bg1.jpg") !important;
+  background: url("../images/backgroud1.png") !important;
   height: 94px;
   border-bottom: 3px solid #e7a665;
 }
@@ -386,7 +386,7 @@ img {
 .bgtranggiua {
   max-width: 100%;
   margin: 0px auto;
-  background: url("../images/bg1.jpg") !important;
+  background: url("../images/backgroud1.png") !important;
   min-height: 270px;
 }
 
@@ -542,7 +542,7 @@ img {
 .footer1 {
   max-width: 100%;
   margin: 0px auto;
-  background: url("../images/bg1.jpg") !important;
+  background: url("../images/backgroud1.png") !important;
   grid-row-start: 2;
   grid-row-end: 3;
 
@@ -671,7 +671,7 @@ div.lk a{
 #backtop1{
   width: 50px;
   height: 50px;
-  background-color: coral;
+  background: url(../images/backgroud1.png);
   color: #fff;
   display: flex;
   justify-content: center;
@@ -682,7 +682,7 @@ div.lk a{
   right: 20px;
 }
 #backtop1:hover{
-  background-color: rgb(237, 32, 32);
+  background: url(../images/bg1.jpg);
 }
 
 
