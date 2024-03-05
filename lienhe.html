@@ -185,21 +185,21 @@
                         width="100%" height="200"  style="border:0; max-width: 500px;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="col-lg-6">
+                <form class="col-lg-6" id="input-form">
                     <h4 style="color: coral; font-weight: bold;"> LIÊN HỆ VỚI CHÚNG TÔI</h4>
                     <div style="padding-bottom: 10px;">
-                        <input type="text" placeholder="  Họ và Tên*" class="lh">
+                        <input type="text" placeholder="  Họ và Tên*" class="lh" id="name">
                     </div>
                     <div style="padding-bottom: 10px;">
-                        <input type="email" placeholder="  Email*" class="lh">
+                        <input type="email" placeholder="  Email*" class="lh" id="email">
                     </div>
                     <div style="padding-bottom: 10px;">
-                        <input type="tel" placeholder="  Số điện thoại*" class="lh">
+                        <input type="tel" placeholder="  Số điện thoại*" class="lh" id="birthdate">
                     </div>
                     <div style="padding-bottom: 10px;">
                         <span>
-                            <textarea name="your-massage" id="" cols="30" rows="10" placeholder="Vãi Xoài" style="height: 122px;
-                            width: 100%; color: #0b0b0b;" class="lh">
+                            <textarea name="your-massage" id="address" cols="30" rows="10" placeholder="Vãi Xoài" style="height: 122px;
+                            width: 100%; color: #0b0b0b;" class="lh" >
 
                             </textarea>
                         </span>
@@ -208,7 +208,9 @@
                         <button type="submit" style="background-color: coral; border: coral; width: 136px; height: 33px; 
                         border-radius: 5px; color: #fff;"> Gửi</button>
                     </div>
-                </div>
+                </form>
+                <div id="error-message" class="error-message" style="text-align: center;
+                font-size: 16px;"></div>
             </div>
         </div>
     </div>
@@ -232,17 +234,16 @@
                     <i class="fas fa-phone-alt"></i> Điện thoại: 0345127544 <br>
                     <i class="fas fa-envelope-square"></i> Email: Project@gmail.com
                 </div>
-                <div class="col-lg-4 col-md-4 lk">
+                <div class="col-lg-4 col-md-4 lk" id="input-form">
                     <h4> ĐĂNG KÍ THÀNH VIÊN</h4>
-                    <input type="text" class="form-control" style="width: 60%; display: revert;margin-bottom: 13px;"
-                        placeholder="Nhập Email*">
-                    <input
-                        style="padding: 5px; background-color: coral; color: #fff; border-radius: 5px; border: coral;"
-                        type="button" value="Đăng ký" onclick="" /><br>
+                    <input type="text" id="email" class="form-control" style="width: 60%; display: revert;margin-bottom: 13px;"
+                        placeholder="Nhập Email*" required>
+                    <button  type="submit" style="padding: 5px; background-color: coral; color: #fff; border-radius: 5px; border: coral;" > Đăng kí</button>
                     <h5>Kết nối với chúng tôi </h5>
                     <a href="https://www.facebook.com/softechaptech" ><i class="fab fa-facebook-f " style="padding-top: 5px;"></i></a>
                     <a href=""><i class="fas fa-phone-alt" style="background-color: rgb(80, 245, 80); padding-top: 5px;"></i></a>
                     <a href=" https://www.youtube.com/"><i class="fab fa-youtube-square" style="background-color: red; padding-top: 5px;"></i></a>
+                    
                 </div>
             </div>
         </div>
@@ -264,6 +265,7 @@
 
         Project Nguyễn Ngọc Quang , Huỳnh Bá Anh , Trần Văn Thịnh 
     </div>
+    <script src="js/script.js"></script>
     <script>
         function showHide() {
             if (document.getElementById('Search').style.display == 'block') {

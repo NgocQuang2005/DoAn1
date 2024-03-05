@@ -696,3 +696,7 @@ div.lk a{
 .fontchu li {
   font-size: 17px;
 }
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
