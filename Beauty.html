@@ -205,34 +205,7 @@
             </div>
         </div>
     </div>
-    <div class="lichdat">
-        <div class="showdatlich" id="datphongkham">
-            <input type="button" value="X" onclick="showdatlich()" style="font-size: 30px; background: none; border: none; color: #000000; float: right;
-            padding-right: 28px;" />
-            <div style="padding-top: 40px; padding-left: 20px; ">
-                <input type="text" name="" id="" placeholder="Họ Và Tên " style="margin-bottom: 15px;width: 380px; height: 35px; border-radius: 4px;" > 
-                <br>
-                <input type="date" style="margin-bottom: 15px ; width: 380px;  height: 35px; border-radius: 4px;" >
-                <br>
-                <input type="text" name="" id="" placeholder="Số điện thoại " style="margin-bottom: 15px; width: 380px;  height: 35px; border-radius: 4px;" >
-                <br>
-                <form method="" action="" style="display: inline-block; border-radius: 3px;" >
-                    <div style="display: inline-block; margin: 5px 0; ">
-                        <select name="" id="" style="width: 380px;  height: 35px;
-                        display: inline-block;">
-                            <option value="1">Gói Chăm Sóc Da Cơ Bản</option>
-                            <option value="2">Gói Chăm Sóc Da Chuyên Sâu</option>
-                            <option value="3">Gói Làm Trắng Da</option>
-                        </select>
-                    </div>
-                </form>
-                <br>
-                <button type="button" style="padding: 3px 17px; background-color: coral; color: #fff; border: coral; border-radius: 3px; margin-top: 20px;"  onclick="showdatlich()">
-                    OK
-                </button>
-            </div>
-        </div>
-    </div>
+    
 
 
 
@@ -302,12 +275,7 @@
                                 </li>
                             </ol>
                         </div>
-                        <div>
-                            <button style="background-color: coral;color: white; padding: 4px 7px; border-color: coral; border-radius: 3px;"
-                            onclick="showdatlich()">
-                                Đặt lịch
-                            </button>
-                        </div>
+                        
                     </div>
                 </div>
                 <hr class="col-lg-12 col-md-12 col-sm-12"  style="border: 1px solid burlywood;">
@@ -349,12 +317,7 @@
                                 </li>
                             </ol>
                         </div>
-                        <div>
-                            <button style="background-color: coral; color: white; padding: 4px 7px; border-color: coral; border-radius: 3px;"
-                            onclick="showdatlich()">
-                                Đặt lịch
-                            </button>
-                        </div>
+                        
                     </div>
                 </div>
                 <hr class="col-lg-12 col-md-12 col-sm-12"  style="border: 1px solid burlywood;">
@@ -385,11 +348,7 @@
                                 
                             </ol>
                         </div>
-                        <div>
-                            <button style="background-color: coral; color: white; padding: 4px 7px; border-color: coral; border-radius: 3px;" onclick="showdatlich()">
-                                Đặt lịch
-                            </button>
-                        </div>
+                        
                     </div>
                 </div>
                 <hr class="col-lg-12 col-md-12 col-sm-12"  style="border: 1px solid burlywood;">
@@ -412,14 +371,16 @@
                                 </li>
                             </ol>
                         </div>
-                        <div>
-                            <button style="background-color: coral; color: white; padding: 4px 7px; border-color: coral; border-radius: 3px;" onclick="showdatlich()">
-                                Đặt lịch
-                            </button>
-                        </div>
+                        
                     </div>
                 </div>
-                
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div style="text-align: center;">
+                        <button  style="background-color: coral; color: white; padding: 5px 7px; border-color: coral; border-radius: 3px; width: 85px;" >
+                            <a class="hoves" href="./Datphong.html">Đặt lịch</a>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -521,16 +482,6 @@
             }
         };
 
-    </script>
-    <script>
-        function showdatlich() {
-            if (document.getElementById('datphongkham').style.display == 'block') {
-                document.getElementById('datphongkham').style.display = 'none';
-            } else {
-                document.getElementById('datphongkham').style.display = 'block';
-            }
-
-        }
     </script>
 </body>
  
