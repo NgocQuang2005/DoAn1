@@ -434,85 +434,44 @@
             </div>
             <form class="row" id="input-form" onsubmit="return validateForm()" style="margin-bottom: 20px; border: 1px solid black; margin: 20px 0px; padding-bottom: 20px;">
                 <div >
-                    <h2 style="text-align: center; font-weight: bold; font-family:courier,arial,helvetica; "> Enter information </h2>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="display: flex; justify-content: center;">
+                    <h2 style="text-align: center; font-weight: bold; font-family:courier,arial,helvetica; "> Hãy Nhập Thông Tin </h2>
+                    <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="display: flex; justify-content: center;">
                         <img src="./images/Dphong1.png" alt="" style="width: 290px;">
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">  
+                    </div> -->
+                    
+                    
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0px;">
-                            <h4 style="font-weight: bold;   font-family:courier,arial,helvetica; " > The day you want to come:</h4>
+                            <h4 style="font-weight: bold;   font-family:courier,arial,helvetica; " > Họ Và Tên:</h4>
                         </div>
-                        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12" >
-                            <input type="date" style="width: 100%; padding: 4px 2px; border-radius: 3px;"  id="date">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                            <input type="text" style="width: 100%; padding: 4px 2px; border-radius: 3px; " placeholder="  Họ" id="first-name">
                         </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 " style="padding-right: 0px;">
-                            <h4 style="font-weight: bold;   font-family:courier,arial,helvetica; "> Pick one of the proposed hourly intervals:</h4>
-                        </div>
-                        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12" style="color: #0b0b0b;">
-                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 candeu">
-                                <input type="radio" name="time" value="Morning">8h - 9h
-                                <br>
-                                <input type="radio" name="time" value="Afternoon">9h-10h
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 candeu">
-                                <input type="radio" name="time" value="Morning">10h-11h
-                                <br>
-                                <input type="radio" name="time" value="Afternoon">14h-15h
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 candeu">
-                                <input type="radio" name="time" value="Morning">15h-16h
-                                <br>
-                                <input type="radio" name="time" value="Afternoon">16h-17h
-                            </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                            <input type="text" style="width: 100%; padding: 4px 2px; border-radius: 3px; " placeholder="  Tên" id="last-name">
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0px;">
-                            <h4 style="font-weight: bold;   font-family:courier,arial,helvetica; " > Room Type and Service:</h4>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
-                            <select name="" id="service"
-                                style="height: 2.507em;max-width: 100%;width: 100%;font-size: .97em; border-radius: 8px;background-color: rgb(255, 255, 255);">
-                                <option value="1"> Massage</option>
-                                <option value="2">Skin Care</option>
-                                <option value="3">Health check</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
-                            <select name="" id="room-type"
-                                    style="height: 2.507em;max-width: 100%;width: 100%;font-size: .97em; border-radius: 8px;background-color: rgb(255, 255, 255);">
-                                <option value="1"> Normal room</option>
-                                <option value="2">VIP room</option>
-                                <option value="3">Special room</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0px;">
-                            <h4 style="font-weight: bold;   font-family:courier,arial,helvetica; " > Your name:</h4>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
-                            <input type="text" style="width: 100%; padding: 4px 2px; border-radius: 3px; " placeholder="First" id="first-name">
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
-                            <input type="text" style="width: 100%; padding: 4px 2px; border-radius: 3px; " placeholder="Last" id="last-name">
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0px;">
-                            <h4 style="font-weight: bold;   font-family:courier,arial,helvetica; " > Phone Number:</h4>
+                            <h4 style="font-weight: bold;   font-family:courier,arial,helvetica; " > Số Điện Thoại:</h4>
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                            <input type="text" style="width: 100%; padding: 4px 2px; border-radius: 3px; " placeholder="### #### ###" id="phone-number"> 
+                            <input type="text" style="width: 100%; padding: 4px 2px; border-radius: 3px; " placeholder="   ### #### ###" id="phone-number"> 
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0px;">
+                            <h4 style="font-weight: bold;   font-family:courier,arial,helvetica; " > Địa Chỉ:</h4>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" style="width: 100%; padding: 4px 2px; border-radius: 3px; " placeholder="  Địa Chỉ..." id="service"> 
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <h5 style="font-weight: bold;   font-family:courier,arial,helvetica; padding-left: 15px; margin-bottom: 0;" > 
-                            Do you have medical restrictions that should be taken into account?
+                           Sản Phẩm Serrum và các sản phẩm khác:
                         </h5>
-                        <p style="  font-family:courier,arial,helvetica;padding-left: 15px; ">Please help us with more details, if any </p>
+                        <p style="  font-family:courier,arial,helvetica;padding-left: 15px; ">Bạn hãy ghi rõ tên sản phẩm bạn muốn đặt và số lượng hoặc bạn cần tư vấn xin hãy chuyển qua phần liên hệ để được hỗ trợ .</p>
                         <textarea name="your-massage" id="name" cols="30" rows="10" style="height: 122px;
                             width: 100%; color: #0b0b0b; border-color: #c5c5c5;" class="lh">
                         </textarea>
